@@ -1,6 +1,7 @@
 use lambda_runtime::{service_fn, LambdaEvent, Error};
 use serde_json::{json, Value};
 
+// Taken From - https://github.com/awslabs/aws-lambda-rust-runtime
 #[tokio::main]
 async fn main() -> Result<(), Error> {
     let func = service_fn(func);
